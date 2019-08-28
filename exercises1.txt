@@ -1,0 +1,108 @@
+Exercise 1
+
+Pseudocode Challenge
+
+1. Newton Second Law
+ 
+  #Algorithm
+    1. Tentukan massa benda
+    2. Tentukan percepatan benda
+    3. Hitung resultan dengan cara massa benda dikalikan percepatan benda
+    4. Tampilkan hasil resultan
+
+
+  #Pseudocode
+
+    START 
+
+    STORE 'massa' WITH 600
+    STORE 'accelaration' WITH 2
+    STORE 'result' WITH COMPUTE 'massa' MULTIPLY BY 'accelaration'
+
+    DISPLAY 'result'
+
+    END
+
+
+2. Tahun Kabisat
+
+  #Algorithm
+    1. Tentukan tahun
+    2. Apakah tahun tersebut tahun kabisat atau bukan? 
+    3. Tentukan dengan cara berikut
+        3.a) Tahun dibagi 4 tidak bersisa dan tahun dibagi 100 dan bersisa, atau
+        3.b) Tahun dibagi 4 tidak bersisa dan dibagi 100 tidak bersisa dan dibagi 400 tidak bersisa
+    4. Tampilkan Hasil
+
+  #Pseudocode
+    
+    START
+
+        READ year
+
+        IF year%4 == 0 AND year%100 != 0 || year%4 == 0 AND year%100 == 0 AND year%400 == 0
+            PRINT is Leap year
+        ELSE 
+            PRINT in not Leap year
+        END IF
+
+    END
+
+
+3. Laundry  Day
+
+  #Algorithm
+    1. Tentukan jumlah baju
+    2. Hitung baju dan masukan kedalam mesin cuci
+    3. Jika baju yang dimasukan kedalam mesin cuci sesuai dengan jumlah baju yang akan dicuci maka : Jalankan mesin cuci
+    4. Tampilkan hasil
+
+  #Pseudocode
+    
+    START
+
+        STORE 'baju' WITH 20
+        STORE 'laundry' WITH 0 
+
+        WHILE loundry < baju
+            DO
+            laundry++;
+
+            IF loundry == baju DISPLAY 'jalankan mesin cuci'
+            ELSE IF loundry < baju DISPLAY 'baju kurang'
+            ELSE IF loundry > baju DISPLAY 'tolong cek baju anda apa bukan'
+
+            END IF
+        
+        END WHILE
+
+    END
+
+4. Periksa Kuku
+
+  #Algorithm
+    1. Tentukan siswa
+    2. Cek Kuku siswa satu persatu
+    3. Jika Kuku panjang maka dihukum, Jika Kuku tidak panjang maka dipuji
+    4. Tampilkan hasil
+
+  #Pseudocode
+    
+    START
+
+        STORE 'siswa' WITH 40
+        READ 'kuku'
+
+        FOR each 'siswa'
+
+            CASE kuku
+                Kuku panjang : PRINT 'dihukum'
+                Kuku tidak panjang : PRINT 'dipuji'
+            
+            END CASE
+        END FOR
+
+    END
+
+
+
