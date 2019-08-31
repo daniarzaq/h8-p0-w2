@@ -4,21 +4,21 @@ function konversiMenit(menit) {
     var z = '';
     if (a%60 === 0) {
         a = a/60;
-        waktu = a + ':00';
+        jam = a + ':00';
 
     } else {
         a = a/60;
-        a = a.toString().split(".")[0]
+        a = Math.floor(a)
 
         z = a*60
-        detik = menit - z
-        second = detik.toString()
+        digit2 = menit - z
+        digit2 = digit2.toString()
 
-            if (second.length < 2) {
-                second = '0' + second
+            if (digit2.length < 2) {
+                digit2 = '0' + digit2
             }
 
-        waktu = a + ':' + second;
+        waktu = a + ':' + digit2;
 
     }
     return waktu
