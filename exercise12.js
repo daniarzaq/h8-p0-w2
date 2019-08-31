@@ -1,16 +1,9 @@
 function konversiMenit(menit) {
+    
+    menit = a/60;
+    menit = Math.floor(menit)
 
-    var a = menit;
-    var z = '';
-    if (a%60 === 0) {
-        a = a/60;
-        jam = a + ':00';
-
-    } else {
-        a = a/60;
-        a = Math.floor(a)
-
-        z = a*60
+        z = menit*60
         digit2 = menit - z
         digit2 = digit2.toString()
 
@@ -18,10 +11,10 @@ function konversiMenit(menit) {
                 digit2 = '0' + digit2
             }
 
-        waktu = a + ':' + digit2;
+            jam = a + ':' + digit2;
 
-    }
-    return waktu
+    
+    return jam
   }
   
  
